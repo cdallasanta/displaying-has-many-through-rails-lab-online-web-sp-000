@@ -3,6 +3,6 @@ class Appointment < ApplicationRecord
   belongs_to :patient
 
   def readable_format
-    self.appointment_datetime.strftime()
+    self.appointment_datetime.strftime(%B )
   end
 end
