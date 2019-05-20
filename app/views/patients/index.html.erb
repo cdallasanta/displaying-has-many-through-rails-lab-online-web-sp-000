@@ -1,0 +1,5 @@
+<ul>
+  <% @patients.each do |patient| %>
+    <li><%= appt.readable_format %>, <%= link_to appt.patient, patient_path(appt.patient) %></li>
+  <% end %>
+</ul>
