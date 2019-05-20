@@ -1,2 +1,5 @@
 <ul>
   <% @doctor.appointments.each do |appt| %>
+    <li><%= appt.readable_format %>, <%= link_to appt.patient, patient_path(appt.patient) %></li>
+  <% end %>
+</ul>
